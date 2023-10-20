@@ -21,15 +21,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    @Inject
-    lateinit var tweetsApi : TweetsApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        GlobalScope.launch {
-            var response = tweetsApi.getCategories()
-            Log.d("TAG", response.body()!!.distinct().toString())
-        }
 
         setContent {
             TweetsTheme {
