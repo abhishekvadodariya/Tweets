@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.tech.tweets.api.TweetsApi
+import com.tech.tweets.screens.CategoryScreen
+import com.tech.tweets.screens.DetailsScreen
 import com.tech.tweets.ui.theme.TweetsTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.GlobalScope
@@ -27,29 +29,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             TweetsTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+                //CategoryScreen()
+                DetailsScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TweetsTheme {
-        Greeting("Android")
     }
 }
