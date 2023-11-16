@@ -1,6 +1,5 @@
 package com.tech.tweets.screens
 
-import android.telecom.Call.Details
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -15,7 +14,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.tech.tweets.models.TweetListItem
 import com.tech.tweets.viewModels.TweetViewModel
 
 @Composable
