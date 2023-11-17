@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TweetsTheme {
                 // A surface container using the 'background' color from the theme
-                //CategoryScreen()
+                CategoryScreen()
                 DetailsScreen()
             }
         }
