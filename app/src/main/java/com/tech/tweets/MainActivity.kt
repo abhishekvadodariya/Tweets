@@ -3,7 +3,11 @@ package com.tech.tweets
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -22,7 +26,11 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             TweetsTheme {
-                App()
+                Scaffold() {
+                    Box(modifier = Modifier.padding(it)) {
+                        App()
+                    }
+                }
             }
         }
     }
