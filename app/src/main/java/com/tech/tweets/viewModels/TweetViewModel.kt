@@ -11,10 +11,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class TweetViewModel @Inject constructor(private val repository: tweetRepository,
-    private val savedStateHandle: SavedStateHandle) : ViewModel() {
+class TweetViewModel @Inject constructor(
+    private val repository: tweetRepository,
+    private val savedStateHandle: SavedStateHandle
+) : ViewModel() {
 
-    val tweets : StateFlow<List<TweetListItem>>
+    val tweets: StateFlow<List<TweetListItem>>
         get() = repository.tweet
 
     init {

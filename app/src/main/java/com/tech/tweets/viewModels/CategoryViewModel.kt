@@ -11,7 +11,7 @@ import javax.inject.Inject
 @HiltViewModel
 class CategoryViewModel @Inject constructor(private val repository: tweetRepository) : ViewModel() {
 
-    val cetegories : StateFlow<List<String>>
+    val cetegories: StateFlow<List<String>>
         get() = repository.categories
 
     init {

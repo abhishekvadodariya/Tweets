@@ -16,7 +16,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(): Retrofit{
+    fun provideRetrofit(): Retrofit {
         return Retrofit.Builder().baseUrl("https://api.jsonbin.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -24,7 +24,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideTweetsApi(retrofit: Retrofit):TweetsApi{
+    fun provideTweetsApi(retrofit: Retrofit): TweetsApi {
         return retrofit.create(TweetsApi::class.java)
     }
 
