@@ -25,5 +25,4 @@ class TweetViewModel @Inject constructor(
             repository.getTweets(category)
         }
     }
-
 }

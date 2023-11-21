@@ -79,5 +79,4 @@ fun CategoryItem(category: String, onClick: (category: String) -> Unit) {
             style = MaterialTheme.typography.bodyMedium
         )
     }
-
 }

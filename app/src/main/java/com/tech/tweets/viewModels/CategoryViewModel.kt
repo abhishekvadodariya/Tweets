@@ -19,5 +19,4 @@ class CategoryViewModel @Inject constructor(private val repository: tweetReposit
             repository.getCategories()
         }
     }
-
 }

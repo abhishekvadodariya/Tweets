@@ -29,5 +29,4 @@ class tweetRepository @Inject constructor(private val tweetsApi: TweetsApi) {
             _tweets.emit(response.body()!!)
         }
     }
-
 }

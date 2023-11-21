@@ -27,5 +27,4 @@ class NetworkModule {
     fun provideTweetsApi(retrofit: Retrofit): TweetsApi {
         return retrofit.create(TweetsApi::class.java)
     }
-
 }
