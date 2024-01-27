@@ -39,7 +39,7 @@ fun CategoryScreen(onClick: (category: String) -> Unit) {
 
     if (categories.value.isEmpty()) {
         Box(modifier = Modifier.fillMaxSize(1f), contentAlignment = Alignment.Center) {
-            Text(text = "Loading...", style = MaterialTheme.typography.bodyLarge)
+            Text(text = "Still Loading...", style = MaterialTheme.typography.bodyLarge)
         }
     } else {
         LazyVerticalGrid(
